@@ -100,8 +100,9 @@ class JoursFeries(object):
 
     @staticmethod
     def vendredi_saint(year, zone):
-        if zone == JoursFeries.check_zone("Alsace-Moselle"):
-            return JoursFeries.paques(year) - timedelta(days=2)
+        if year >= 1886:
+            if zone == JoursFeries.check_zone("Alsace-Moselle"):
+                return JoursFeries.paques(year) - timedelta(days=2)
         return None
 
     @staticmethod
