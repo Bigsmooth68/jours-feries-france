@@ -68,7 +68,7 @@ class JoursFeries(object):
             "Ascension": JoursFeries.ascension(year),
             "Lundi de Pentecôte": JoursFeries.lundi_pentecote(year),
             "Vendredi saint": JoursFeries.vendredi_saint(year, zone),
-            "2ème jour de Noël": JoursFeries.deuxieme_jour_noel(year, zone),
+            "Saint Etienne": JoursFeries.deuxieme_jour_noel(year, zone),
             "Abolition de l'esclavage": JoursFeries.abolition_esclavage(year, zone),
         }
 
